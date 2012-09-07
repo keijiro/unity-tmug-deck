@@ -1,5 +1,7 @@
 #pragma strict
 
+var explosionPrefab : GameObject;
+
 function Start() {
 	while (!Input.GetKeyDown(KeyCode.D)) yield;
 
@@ -9,5 +11,6 @@ function Start() {
 
 	yield WaitForSeconds(Random.value);
 
+	Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 	Destroy(gameObject);
 }

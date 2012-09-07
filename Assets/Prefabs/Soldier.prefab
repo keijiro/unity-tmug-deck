@@ -94,6 +94,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fd57116098a4478aaa9b0c0e0b9c1a4, type: 3}
   m_Name: 
+  explosionPrefab: {fileID: 100000, guid: 5a5975fe200a34590a3377130da7ff44, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
