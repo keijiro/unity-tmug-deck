@@ -2,8 +2,6 @@
 
 var soldierPrefab : GameObject;
 
-var distance = 8.0;
-
 function Update() {
 	if (Input.GetKeyDown(KeyCode.S)) {
 		Instantiate(soldierPrefab, GetCursorPosition(), soldierPrefab.transform.rotation);
@@ -11,6 +9,7 @@ function Update() {
 }
 
 private function GetCursorPosition() {
+	var distance = camera.main.transform.position.magnitude;
 	var position = Input.mousePosition + Vector3.forward * distance;
 	return Camera.main.ScreenToWorldPoint(position);
 }
