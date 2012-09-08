@@ -93,10 +93,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d81ac144dc647dbb8f9fed9cccb859, type: 3}
   m_Name: 
   speed: .100000001
-  pitch: .200000003
-  amp: 1
+  audioToSpeed: 0
+  pitch: .25999999
+  amplifier: 1
   vertical: 0
-  freq: 1
+  frequency: 1
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
