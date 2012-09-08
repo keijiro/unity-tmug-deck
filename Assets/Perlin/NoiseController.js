@@ -1,7 +1,7 @@
 #pragma strict
 
 @Range(0.0, 1.0)	var speed = 0.1;
-@Range(0.0, 90.0)	var pitch = 0.0;
+@Range(0.0, 1.5)	var pitch = 0.0;
 @Range(0.0, 5.0)	var amp = 1.0;
 @Range(0.0, 1.0)	var vertical = 0.0;
 @Range(0.1, 5.0)	var freq = 1.0;
