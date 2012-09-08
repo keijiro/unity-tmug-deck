@@ -15,7 +15,11 @@ function Start() {
 }
 
 function Update() {
-    transform.position += transform.forward * (globalSpeed * speedScale * Time.deltaTime);
-	var rotation = Quaternion.FromToRotation(transform.forward, globalTarget.transform.position - transform.position);
-    transform.rotation = Quaternion.RotateTowards(Quaternion.identity, rotation, globalYawing * yawingScale * Time.deltaTime) * transform.rotation;
+    if (!globalTarget) {
+        Destroy(gameObject);
+    } else {
+        transform.position += transform.forward * (globalSpeed * speedScale * Time.deltaTime);
+        var rotation = Quaternion.FromToRotation(transform.forward, globalTarget.transform.position - transform.position);
+        transform.rotation = Quaternion.RotateTowards(Quaternion.identity, rotation, globalYawing * yawingScale * Time.deltaTime) * transform.rotation;
+    }
 }
